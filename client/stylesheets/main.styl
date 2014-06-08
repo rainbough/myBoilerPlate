@@ -1,0 +1,83 @@
+@import url('http://fonts.googleapis.com/css?family=Muli|Open+Sans:300italic,400italic,600italic,400,300,600');
+
+// declare some fonts
+open = 'Open Sans', sans-serif;
+muli = 'Muli', sans-serif;
+
+// declare some colors 
+
+// all of the blues whoa whoa whoa getting pretty crazy
+blue = #006bb3
+darkblue = #1b537b
+bgblue = #164d73
+minblue = #f6f8fa
+fadedblue = #6496b9
+darkfaded = #4a5963
+
+orange = #f26533
+textorange = #ee5f12
+
+// declare some font weights
+normal = 400
+light = 300
+heavy = 600
+
+/* MEDIA QUERY GUIDE 
+Large devices — desktops, 1200px and up
+Medium devices — desktops, 992px and up
+Small devices — tablets, 768px and up
+XS devices — less than 768px
+*/
+
+
+
+footer
+	border-top 1px solid #dde5e8
+	
+	p
+		font-family muli
+		font-size 16px
+		color #6d889a
+		line-height 1.6
+	ul.footernav
+		margin 0
+		padding 0
+
+		li
+			list-style none
+			display inline-block
+			margin 0
+			padding 0
+			font-family muli
+			font-size 15px
+			a
+				color #1b5680
+				margin 0px 30px 5px 0
+			&:hover
+					color #6fdc6f
+					text-decoration none
+			&.footer_link
+				a
+					color textorange
+
+	// SOS Solving Organ Shortage callout
+	img.sos-link
+		width 100%
+		height auto
+
+	// WO proper logo
+	img.logoproper
+		width 100%
+		height auto
+
+// everything over 992px (medium screens)
+@media handheld, screen and (min-width: 992px)
+	footer
+		h6
+			font-size 16px /* trying to avoid a linebreak here... */
+
+// everything over 1200px (large screens)
+@media handheld, screen and (min-width: 1200px)
+	footer
+		h6
+			font-size 20px /* this is the default size anyhow */
