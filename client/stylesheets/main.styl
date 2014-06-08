@@ -14,6 +14,8 @@ minblue = #f6f8fa
 fadedblue = #6496b9
 darkfaded = #4a5963
 
+lightgray = rgba(128, 128, 128, 0.5)
+
 orange = #f26533
 textorange = #ee5f12
 
@@ -32,7 +34,7 @@ XS devices — less than 768px
 
 
 footer
-	border-top 1px solid #dde5e8
+	background-color #fff
 	
 	p
 		font-family muli
@@ -51,7 +53,7 @@ footer
 			font-family muli
 			font-size 15px
 			a
-				color #1b5680
+				color lightgray
 				margin 0px 30px 5px 0
 			&:hover
 					color #6fdc6f
@@ -59,16 +61,6 @@ footer
 			&.footer_link
 				a
 					color textorange
-
-	// SOS Solving Organ Shortage callout
-	img.sos-link
-		width 100%
-		height auto
-
-	// WO proper logo
-	img.logoproper
-		width 100%
-		height auto
 
 // everything over 992px (medium screens)
 @media handheld, screen and (min-width: 992px)
