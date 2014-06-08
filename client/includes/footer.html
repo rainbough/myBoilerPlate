@@ -2,23 +2,15 @@
 	<footer>
 		<div class="container">
 			<h5>This is the footer!</h5>
-		</div>
-		<div class="row">
+			<div class="row">
 				<div class="col-md-12">
-
 					<ul class="footernav">
-						<li><a href="{{pathFor 'participants'}}">Members</a></li>
-						<li><a href="{{pathFor 'summit2014'}}">Summit</a></li>
-						<li><a href="{{pathFor 'articleList'}}">Papers</a></li>
-						<li><a href="{{pathFor 'supporters'}}">Supporters</a></li>
-						<li><a href="{{pathFor 'contact'}}">Contact</a></li>
+						{{#each pages}}
+						<li><a href="/{{name}}">{{name}}</a></li>
+						{{/each}}
 					</ul>
-
-					<p class="small cln">&copy; 2014 WholeOrgan.org. All Rights Reserved.</p>
-				</div>
-			</div>
-
+				</div><!-- end column medium 12 -->
+			</div><!-- end row -->
+		</div><!-- end container -->
 	</footer>
-
-
 </template>
