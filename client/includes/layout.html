@@ -1,0 +1,12 @@
+<template name="layout">
+	{{> topNav}}
+	
+	<div class="page-wrap">
+		<div class="container">
+			{{> meteorErrors}}
+			{{> yield}}
+		</div>
+	</div>
+
+	{{> footer}}
+</template>

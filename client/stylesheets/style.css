@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+/* start sticky footer */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -200px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 200px; 
+}
+/* end sticky footer */
+
+
+.inline{
+	display: inline-block;
+}
+
+
+footer{
+	background-color: teal;
+	color: #222;
+}
+
+a {
+	color: #5F9EA0;
+}
+
+body {
+	color: #666666;
+}
+
+
+.navbar-default {
+	background-color: #fff;
+}
+
+#spinner { height: 300px } 
